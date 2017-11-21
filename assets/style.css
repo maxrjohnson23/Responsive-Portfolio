@@ -2,33 +2,44 @@ body {
     font-family: 'PT Sans', 'Georgia', Times, Times New Roman, serif;
     background-image: url("/assets/images/background.png");
     width: 100%;
+    margin-bottom: -80px;
+    padding-bottom: 80px;
 }
 
 
 .page {
-    width: 960px;
+    max-width: 960px;
+    width: 90%;
+    padding: 0 30px;
     margin: 0 auto;
     overflow: auto;
 }
 
 .main {
     box-sizing: border-box;
-    width: 650px;
-    display: inline-block;
-    margin: 30px 20px 200px 0;
+    /*width: fit-content;*/
+    width: 68%;
+    /*width: max-content;*/
+    /*display: inline-block;*/
+    /*max-width:68%;*/
+    margin: 30px 20px 30px 0;
     padding: 25px 30px;
     background-color: #FFF;
     border: 1px solid #DDD;
+    float: left;
 }
 
 .connect {
-    display: inline-block;
-    width: 270px;
+    box-sizing: border-box;
+    /*display: inline-block;*/
+    /*max-width: 28%;*/
+    padding: 20px;
     vertical-align: top;
     margin-top: 30px;
     background-color: #FFF;
     text-align: center;
     border: 1px solid #DDD;
+    float: right;
 }
 
 
@@ -43,7 +54,8 @@ body {
 nav {
     overflow: auto;
     margin: 0 auto;
-    width: 960px;
+    max-width: 960px;
+    width: 90%;
     background-color: #FFF;
 }
 
@@ -51,7 +63,8 @@ nav h1 {
     font-size: 48px;
     text-align: center;
     line-height: 80px;
-    width: 350px;
+    /*width: 350px;*/
+    padding: 0 40px;
     float: left;
     color: #FFF;
     background-color: #4AAAA5;
@@ -109,7 +122,12 @@ nav ul {
     height: 220px;
 }
 
+.clearfix {
+    clear: both;
+}
+
 .project {
+    box-sizing: border-box;
     color: #FFF;
     font-size: 22px;
     padding: 20px;
@@ -118,6 +136,7 @@ nav ul {
     right: 0;
     bottom: 80px;
     background-color: #4AAAA5;
+    width: 100%;
 }
 
 .main a {
@@ -158,7 +177,7 @@ textarea {
     font-size: 21px;
     padding: 15px;
     margin: 0 auto;
-    width: 220px;
+    /*width: 220px;*/
     border-bottom: 2px solid #DDD;
 }
 
@@ -172,7 +191,8 @@ textarea {
 }
 
 .connect img {
-    width: 60px;
+    max-width: 60px;
+    width: auto;
 }
 
 
@@ -185,6 +205,7 @@ footer {
     height: 50px;
     background-color: #666;
     border-top: 5px solid #4AAAA5;
+    margin-top: 30px;
 }
 
 footer small {
@@ -224,4 +245,56 @@ footer small {
     /* Microsoft Edge */
     padding-left: 8px;
     color: #DDD;
+}
+
+@media screen and (max-width: 1060px) {
+
+    .page {
+        width: 80%;
+    }
+
+    nav {
+        width: 80%;
+    }
+
+    nav h1 {
+        /*font-size: 2em;*/
+    }
+
+    .main {
+        /*max-width: 50%;*/
+        /*width: 350px;*/
+        width: max-content;
+    }
+
+    .connect {
+        float:right;
+        /*max-width: 30%;*/
+        /*min-width: 180px;*/
+        /*margin: 30px auto;*/
+    }
+
+    .connect a {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .page {
+        /*width:80%;*/
+    }
+    .main {
+        display: block;
+        width: 100%;
+    }
+    .gallery img{
+        width: 50%;
+    }
+    .project {
+        width: 30%;
+    }
+    .connect {
+        display: block;
+    }
 }
