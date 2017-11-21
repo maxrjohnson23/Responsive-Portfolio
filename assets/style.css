@@ -249,16 +249,21 @@ footer small {
     .main {
         width: max-content;
     }
-    
+
     .connect a {
         width: auto;
+    }
+
+    .gallery {
+        display:block;
+        float: none;
     }
 }
 
 @media screen and (max-width: 800px) {
 
     .page {
-        width:85%;
+        width: 85%;
     }
     .main {
         display: block;
@@ -268,6 +273,10 @@ footer small {
     .connect {
         display: block;
         width: 100%;
+    }
+
+    .gallery {
+        float: left;
     }
 }
 
@@ -283,7 +292,6 @@ footer small {
         vertical-align: middle;
         display: inline-block;
         /*margin: 0 auto;*/
-
     }
 
     .connect {
@@ -297,7 +305,6 @@ footer small {
         width: 40%;
         padding: 0 0;
     }
-
 }
 
 @media screen and (max-width: 550px) {
@@ -308,10 +315,9 @@ footer small {
     .nav-buttons {
         width: 100%;
         margin: 0 auto;
-
     }
 
-    .nav-buttons li{
+    .nav-buttons li {
         box-sizing: border-box;
         display: block;
         text-align: center;
