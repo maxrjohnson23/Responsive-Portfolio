@@ -249,13 +249,26 @@ footer small {
     .main {
         width: max-content;
     }
+    .about {
+        width: 60%;
+    }
+    .contact {
+        width: 60%;
+    }
+
+    #profile-img {
+        float: none;
+        width: 80%;
+        display: block;
+        margin: 15px auto;
+    }
 
     .connect a {
         width: auto;
     }
 
     .gallery {
-        display:block;
+        display: block;
         float: none;
     }
 }
@@ -268,6 +281,11 @@ footer small {
     .main {
         display: block;
         width: 100%;
+    }
+    #profile-img {
+        float: left;
+        max-width: 200px;
+        margin: 0 25px 20px 0;
     }
 
     .connect {
@@ -284,14 +302,21 @@ footer small {
     .main {
         margin: 30px auto;
         float: none;
-        /*display: inline-block;*/
-        /*width: 80%;*/
         width: max-content;
+    }
+
+    .about {
+        width: 100%;
     }
     .gallery {
         vertical-align: middle;
         display: inline-block;
-        /*margin: 0 auto;*/
+    }
+    #profile-img {
+        float: none;
+        max-width: 300px;
+        display: block;
+        margin: 15px auto;
     }
 
     .connect {
@@ -307,22 +332,32 @@ footer small {
     }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 650px) {
+    .navbar {
+        width: 100%;
+    }
     nav h1 {
         width: 100%;
     }
 
     .nav-buttons {
         width: 100%;
-        margin: 0 auto;
+        float: none;
+        display: block;
+        /*margin: 0 auto;*/
+    }
+    nav ul {
+        width: 100%;
     }
 
     .nav-buttons li {
-        box-sizing: border-box;
-        display: block;
+        /*box-sizing: border-box;*/
+        margin: 0;
+        display: inline-block;
         text-align: center;
-        padding: 0px;
+        /*padding: 0px;*/
         background-color: #FFF;
+        width: 33.33%;
     }
     .nav-buttons li a {
         height: auto;
