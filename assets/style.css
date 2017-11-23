@@ -17,6 +17,7 @@ a {
     padding: 0 30px;
     margin: 0 auto;
     overflow: auto;
+    margin-top: 80px;
 }
 
 .main {
@@ -42,11 +43,13 @@ a {
 
 
 .nav-div {
+    position:fixed;
+    top:0;
     background-color: #FFF;
     height: 80px;
     width: 100%;
     margin: 0;
-    border-bottom: 1px solid #DDD;
+    z-index: 100;
 }
 
 nav {
@@ -345,6 +348,7 @@ footer small {
 @media screen and (max-width: 650px) {
     .nav-div {
         height: auto;
+        position: static;
     }
 
     .navbar {
@@ -369,6 +373,10 @@ footer small {
         height: auto;
         line-height: 50px;
         width: 100%;
+    }
+
+    .page {
+        margin-top:0px;
     }
 
     .portfolio {
