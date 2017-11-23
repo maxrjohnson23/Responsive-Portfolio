@@ -6,6 +6,10 @@ body {
     padding-bottom: 80px;
 }
 
+a {
+    text-decoration: none;
+}
+
 
 .page {
     max-width: 960px;
@@ -112,7 +116,9 @@ nav ul {
     height: 220px;
 }
 
-.clearfix {
+.clearfix::after {
+    content: "";
+    display: table;
     clear: both;
 }
 
@@ -238,12 +244,12 @@ footer small {
 
 @media screen and (max-width: 1060px) {
 
-    .page {
-        width: 85%;
+    nav {
+        width: 70%;
     }
 
-    nav {
-        width: 85%;
+    .page {
+        width: 70%;
     }
 
     .main {
@@ -274,6 +280,10 @@ footer small {
 }
 
 @media screen and (max-width: 800px) {
+
+    nav {
+        width: 85%;
+    }
 
     .page {
         width: 85%;
@@ -308,6 +318,7 @@ footer small {
     .about {
         width: 100%;
     }
+
     .gallery {
         vertical-align: middle;
         display: inline-block;
@@ -322,7 +333,6 @@ footer small {
     .connect {
         float: none;
         margin: 0 auto;
-        max-width: 350px;
     }
 
     nav h1 {
@@ -333,6 +343,10 @@ footer small {
 }
 
 @media screen and (max-width: 650px) {
+    .nav-div {
+        height: auto;
+    }
+
     .navbar {
         width: 100%;
     }
@@ -341,26 +355,43 @@ footer small {
     }
 
     .nav-buttons {
-        width: 100%;
         float: none;
-        display: block;
-        /*margin: 0 auto;*/
-    }
-    nav ul {
-        width: 100%;
     }
 
     .nav-buttons li {
-        /*box-sizing: border-box;*/
+        box-sizing: border-box;
         margin: 0;
-        display: inline-block;
+        float: left;
         text-align: center;
-        /*padding: 0px;*/
-        background-color: #FFF;
         width: 33.33%;
     }
     .nav-buttons li a {
         height: auto;
-        line-height: 30px;
+        line-height: 50px;
+        width: 100%;
+    }
+
+    .portfolio {
+        width: 100%;
+    }
+
+    .contact {
+        width: 100%;
+    }
+
+    .portfolio a {
+        display: block;
+        height: auto;
+        margin-bottom: -50px;
+    }
+
+    .gallery {
+        float: none;
+        display: block;
+        height: auto;
+    }
+
+    .gallery img {
+        width: 100%;
     }
 }
