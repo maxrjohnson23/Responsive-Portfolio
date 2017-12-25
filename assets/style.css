@@ -250,6 +250,11 @@ footer small {
     nav {
         width: 70%;
     }
+    
+    nav h1 {
+        font-size: 36px;
+
+    }
 
     .page {
         width: 70%;
