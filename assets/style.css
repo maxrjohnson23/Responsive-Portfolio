@@ -1,6 +1,6 @@
 body {
     font-family: 'PT Sans', 'Georgia', Times, Times New Roman, serif;
-    background-image: url("/assets/images/background.png");
+    background-image: url("images/background.png");
     width: 100%;
     margin-bottom: -80px;
     padding-bottom: 80px;
